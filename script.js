@@ -89,7 +89,7 @@ const removeElements = (index) => {
 };
 
 const getdata = async () => {
-  const response = await fetch("https://makeupinfo.herokuapp.com/product");
+  const response = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json");
   const data = await response.json();
   console.log("data", data);
   products = data;
@@ -126,15 +126,15 @@ const PaginationBtnClick = (event) => {
   var page = products.slice(nextPage - 10, nextPage);
   page.forEach((productDetails, index) => {
     console.log(index);
-    const { name, price, imageLink, brand, description, productLink } =
+    const { name, price, image_link, brand, description, product_link } =
       productDetails;
     createElement(
       name,
       price,
-      imageLink,
+      image_link,
       brand,
       description,
-      productLink,
+      product_link,
       index
     );
   });
