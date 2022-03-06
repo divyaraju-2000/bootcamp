@@ -10,17 +10,16 @@
        .card{
 	box-shadow:0 3px 16px 0 rgb(0 0 0 / 11%) ;
 	text-align: center;
-	background-color:#f3f3f3;
-	width:min-content;
-	height:5%;
+	background-color:#faf9f9;
+	
 	margin:15px;
 }
 .content{
-	display:flex;
-	flex-direction:row;
-flex-wrap:wrap;
+display:grid;
+grid-template-columns: auto auto auto;
+grid-template-rows:auto auto auto;
 }
-.img{
+img{
  height:100px;
  width:100px;
 }
@@ -54,7 +53,11 @@ flex-wrap:wrap;
    
 </head>
 <body>
-    
+    <form onsubmit="event.preventDefault(); onLoad()">
+        <label>Search your product</label>
+        <input type="search" name="search_product" id="search_product" placeholder="search a product"/>    
+    </div>
+</form>
 <div class="content" id="content">
     <!-- <div class="card">
         <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" height="100" width="100">
