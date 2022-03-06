@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       .card{
+	box-shadow:0 3px 16px 0 rgb(0 0 0 / 11%) ;
+	text-align: center;
+	background-color:#f3f3f3;
+	width:min-content;
+	height:5%;
+	margin:15px;
+}
+.content{
+	display:flex;
+	flex-direction:row;
+flex-wrap:wrap;
+}
+.img{
+ height:100px;
+ width:100px;
+}
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination button {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination button.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination button:hover:not(.active) {background-color: #ddd;}
+
+    </style>
+   
+</head>
+<body>
+    
+<div class="content" id="content">
+    <!-- <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" height="100" width="100">
+        <p>Product name</p>
+        <p>Product price</p>
+    </div>
+        <div class="card">
+            <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" height="100" width="100">
+    <p>Product2</p>
+    <p>price2</p>
+</div> -->
+</div>
+        <div class="center"> 
+            <div class="pagination" id="pagination">
+                
+            </div>
+        </div>
+        <script src="/script.js"></script>
+</body>
+</html>
